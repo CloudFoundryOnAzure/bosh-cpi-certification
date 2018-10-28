@@ -21,3 +21,5 @@ bosh int \
   -l <( echo "${DIRECTOR_VARS_FILE}" ) \
   -l <( pipelines/${INFRASTRUCTURE}/assets/director-vars ) \
   bosh-deployment/bosh.yml > director-config/director.yml
+
+cat director-config/director.yml
